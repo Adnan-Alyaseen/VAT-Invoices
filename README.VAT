@@ -1,0 +1,44 @@
+# Arabic VAT Invoice Generator
+
+This project is a simple web page for generating Arabic VAT invoices. Users can input seller and buyer information, item descriptions, prices, and VAT rates to create a VAT invoice.
+
+## Features
+
+- Input fields for seller name, buyer name, item description, item price, and VAT rate.
+- Calculates and displays the VAT amount and total price.
+- Supports right-to-left text alignment for Arabic content.
+
+## Usage
+
+1. Open the web page.
+2. Fill in the seller name, buyer name, item description, item price, and VAT rate.
+3. Click the "إنشاء الفاتورة" (Create Invoice) button to generate the invoice.
+4. The generated invoice will be displayed below the form.
+
+## Files
+
+- `index.html`: The main HTML file containing the structure of the web page.
+- `styles.css`: The CSS file for styling the web page.
+- `script.js`: The JavaScript file containing the logic to generate the invoice.
+
+## How to Deploy
+
+1. Clone the repository or download the files.
+2. Open the `index.html` file in a web browser to view the page locally.
+3. To make it live, follow the instructions in the "GitHub Pages" section below.
+
+## GitHub Pages
+
+This project can be hosted on GitHub Pages. Follow these steps to deploy:
+
+1. Create a new GitHub repository.
+2. Upload the `index.html`, `styles.css`, `script.js`, and `README.md` files to the repository.
+3. Go to the "Settings" tab of your repository.
+4. Scroll down to the "GitHub Pages" section.
+5. Under "Source", select the branch (usually `main`) and the folder (usually `/root` or `/docs`) where your `index.html` file is located.
+6. Click "Save".
+7. Your site will be available at `https://yourusername.github.io/your-repo-name/`.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
