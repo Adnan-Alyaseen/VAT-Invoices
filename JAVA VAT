@@ -1,0 +1,22 @@
+function generateInvoice() {
+    const sellerName = document.getElementById('seller-name').value;
+    const buyerName = document.getElementById('buyer-name').value;
+    const itemDescription = document.getElementById('item-description').value;
+    const itemPrice = parseFloat(document.getElementById('item-price').value);
+    const vatRate = parseFloat(document.getElementById('vat-rate').value);
+    const vatAmount = (itemPrice * vatRate) / 100;
+    const totalAmount = itemPrice + vatAmount;
+
+    const invoiceHTML = `
+        <h2>فاتورة ضريبة القيمة المضافة</h2>
+        <p><strong>اسم البائع:</strong> ${sellerName}</p>
+        <p><strong>اسم المشتري:</strong> ${buyerName}</p>
+        <p><strong>وصف السلعة:</strong> ${itemDescription}</p>
+        <p><strong>سعر السلعة:</strong> ${itemPrice.toFixed(2)} ريال</p>
+        <p><strong>معدل ضريبة القيمة المضافة:</strong> ${vatRate}%</p>
+        <p><strong>قيمة الضريبة:</strong> ${vatAmount.toFixed(2)} ريال</p>
+        <p><strong>المبلغ الإجمالي:</strong> ${totalAmount.toFixed(2)} ريال</p>
+    `;
+
+    document.getElementById('invoice-display').innerHTML = invoiceHTML;
+}
